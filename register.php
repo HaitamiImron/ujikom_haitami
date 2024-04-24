@@ -13,7 +13,6 @@
             color: #fff; /* Warna teks footer */
             padding: 3px; /* Ruang dalam footer */
             text-align: center; /* Teks di tengah */
-            position: fixed; /* Footer akan tetap di bagian bawah layar */
             bottom: 0; /* Footer menempel di bagian bawah */
             width: 100%; /* Lebar footer 100% dari layar */
         }
@@ -41,7 +40,7 @@
   </div>
 </nav>
 
-<div class="container py-5">
+<div class="container py-5 min-vh-100">
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card">

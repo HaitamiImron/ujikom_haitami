@@ -34,7 +34,6 @@ $email = $data['email'];
             color: #fff; /* Warna teks footer */
             padding: 3px; /* Ruang dalam footer */
             text-align: center; /* Teks di tengah */
-            position: fixed; /* Footer akan tetap di bagian bawah layar */
             bottom: 0; /* Footer menempel di bagian bawah */
             width: 100%; /* Lebar footer 100% dari layar */
         }
@@ -77,7 +76,7 @@ $email = $data['email'];
     </div>
 </div>
 
-<div class="container mt-2">
+<div class="container mt-2 min-vh-100">
 <div class="row">
 <?php 
             $query = mysqli_query($koneksi, "SELECT * FROM foto INNER JOIN user ON foto.user_id=user.user_id WHERE user.user_id='$user_id'");
